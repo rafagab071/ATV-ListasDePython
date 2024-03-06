@@ -1,0 +1,216 @@
+'''
+Exercício 1
+'''
+def binario(n):
+    binario = 0
+    fator = 1
+    while n != 0:
+        resto = n%2
+        binario = resto*fator + binario
+        n = n//2
+        fator = fator*10
+    return binario
+
+print('Exercício 1')
+print(binario(456))
+print()
+
+'''
+Exercício 2
+'''
+def fatorial(n):
+    fat = 1
+    for i in range(2,n+1):
+        fat = fat*i
+    return fat
+
+print('Exercício 2')
+print(fatorial(5))
+print()
+
+'''
+Exercício 3
+'''
+def potencia(b, e):
+    pot = 1
+    for i in range(e):
+        pot = b*pot
+    return pot
+
+print('Exercício 3')
+print(potencia(3,4))
+print()
+
+'''
+Exercício 4
+'''
+def produto(a,b):
+    prod = 0
+    for i in range(b):
+        prod = prod + a
+    return prod
+
+print('Exercício 4')
+print(produto(3,8))
+print()
+
+'''
+Exercício 5
+'''
+def divisao(p,q):
+    quociente = 0
+    while p>=q:
+        quociente += 1
+        p = p-q
+        
+    return quociente
+
+print('Exercício 5')
+print(divisao(17,3))
+print()
+
+'''
+Exercício 6
+'''
+def tamanho(n):
+    tam = 1
+    while (n//10) != 0:
+        tam += 1
+        n = n//10
+    
+    return tam 
+        
+print('Exercício 6')
+print(tamanho(12345678))
+print()
+
+'''
+Exercício 7
+'''
+def impar(n):
+    if n%2 == 0:
+        return False
+    else:
+        return True
+
+print('Exercício 7')
+print(impar(7))
+print(impar(8))
+print()
+
+'''
+Exercício 8
+'''
+def nao_decrescente(n):
+    nao_decres = 1 # não é não-decrescente
+    decres = 0     # é decrescente
+    copia_n = n
+    
+    while n >= 10:
+        d1 = n%10
+        n = n//10
+        d2 = n%10
+        if d2<d1:
+            decres = 1
+    
+    n = copia_n
+    if decres == 0:
+        while n >= 10:
+            d1 = n%10
+            n = n//10
+            d2 = n%10
+            if d2==d1:
+                nao_decres = 0
+    
+    if (nao_decres == 0):
+        return True
+    else:
+        return False
+
+print('Exercício 8')
+print(nao_decrescente(1234))
+print(nao_decrescente(1332))
+print(nao_decrescente(4321))
+print(nao_decrescente(4331))
+print(nao_decrescente(1334))
+print()
+
+'''
+Exercício 9
+'''
+def primo(n):
+    divisores = 1
+    for i in range (2,(n//2+1)):
+        if n%i == 0:
+            divisores += 1
+    
+    if divisores == 1: 
+        return True
+    else:
+        return False
+    
+print('Exercício 9')
+print(primo(8))
+print(primo(1000003))
+print()
+
+'''
+Exercício 10
+'''
+def triangulo(a,b,c):
+    if ((a+b>c) and (a+c>b) and (b+c>a)):
+        return True
+    else:
+        return False
+    
+print('Exercício 10')
+print(triangulo(1,2,3))
+print(triangulo(1,2,5))
+print(triangulo(3,4,5))
+print()
+
+'''
+Exercício 11
+'''
+def letra(n):
+    return(chr(n+64))
+
+print('Exercício 11')
+print(letra(1), end=' ')
+print(letra(2), end=' ')
+print(letra(3), end=' ')
+print(letra(4), end=' ')
+print(letra(5), end=' ')
+print(letra(6), end=' ')
+print(letra(7), end=' ')
+print(letra(8), end=' ')
+print(letra(9), end=' ')
+print(letra(10), end=' ')
+print(letra(11), end=' ')
+print(letra(12), end=' ')
+print(letra(13), end=' ')
+print(letra(14), end=' ')
+print(letra(15), end=' ')
+print(letra(16), end=' ')
+print(letra(17), end=' ')
+print(letra(18), end=' ')
+print(letra(19), end=' ')
+print(letra(20), end=' ')
+print(letra(21), end=' ')
+print(letra(22), end=' ')
+print(letra(23), end=' ')
+print(letra(24), end=' ')
+print(letra(25), end=' ')
+print(letra(26))
+print()
+
+'''
+Exercício 12
+'''
+def area_circulo(r):
+    return r*r*3.1416
+
+print('Exercício 12')
+print(area_circulo(1))
+print(area_circulo(2))
+print()

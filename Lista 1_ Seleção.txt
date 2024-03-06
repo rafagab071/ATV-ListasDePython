@@ -1,0 +1,67 @@
+'''Exercício 2
+n = int(input('Digite o número a ter o dígito da unidade identificado.'))
+
+unidade = n%10
+
+print('A unidade é ',unidade)
+'''
+
+''' Exercício 3
+n = int(input('Digite um inteiro n (n>10) para exibirmos a dezena e a unidade: '))
+
+digitos = n - (n//100)*100
+
+print('Os digitos são', digitos)
+'''
+
+''' Exercício 4
+n = int(input('Digite um número inteiro de 4 dígitos: '))
+
+milhar = n//1000
+
+print('A unidade de milhar do número %d é %d.' %(n,milhar))
+'''
+
+''' Exercício 5
+n = int(input('Digite um número inteiro de 4 dígitos.'))
+
+dp = n//100
+du = n%100
+soma = dp+du
+
+print('A soma dos dois primeiros dígitos com os dois ultimos é: %d + %d = %d' %(dp,du,soma))
+'''
+
+''' Exercício 6
+salario = float(input('Digite o salário do funcionário: '))
+idade = int(input('\nDigite a idade do funcionário: '))
+salario_novo = salario*(1+idade/100)
+print('\nO novo salário é: ', salario_novo)
+'''
+
+''' Exercício 7
+n = float(input('Digite um número para se extrair sua raiz quadrada: '))
+raiz = (n**(1/2))
+print('A raiz quadrada de', n, 'é', raiz)
+'''
+
+''' Exercício 8
+n = int(input('Digite um número para a obtenção de seu cubo (n³): '))
+cubo = n*n*n
+print('O cubo de', n, 'é', cubo)
+'''
+
+''' Exercício 9
+base = float(input('Digite a base: '))
+expoente = int(input('Digite o expoente: '))
+potencia = base**expoente
+print(base, 'elevado a', expoente, 'é: ', potencia)
+'''
+
+''' Exercício 10
+prova1 = float(input('Digite a nota da primeira prova: '))
+prova2 = float(input('Digite a nota da segunda prova: '))
+trabalhos = float(input('Digite a nota dos trabalhos: '))
+media = 0.4*prova1+0.4*prova2+0.2*trabalhos
+print('A media final é: %.2f' %(media))
+'''

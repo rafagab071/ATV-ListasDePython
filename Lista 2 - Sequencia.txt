@@ -1,0 +1,124 @@
+''' 4)'''
+a = float(input('Digite um número: '))
+b = float(input('Digite outr número: '))
+c = float(input('Digite um terceiro número: '))
+
+if (a>b and a>c):
+    print('a = %f é maior do que b = %f e c = %f' %(a,b,c))
+elif (b>a and b>c):
+        print('b = %f é maior do que a = %f e c = %f' %(b,a,c))
+else:
+        print('c = %f é maior do que a = %f e b = %f' %(c,a,b))    
+
+
+''' 5)
+vogal = (input('Digite uma letra do alfabeto: '))
+
+if (vogal == 'a' or vogal == 'e' or vogal == 'i' or vogal == 'o' or vogal == 'u' or vogal == 'A' or vogal == 'E' or vogal == 'I' or vogal == 'O' or vogal == 'U'):
+    print('A letra digitada é uma vogal')
+else:
+    print('A letra digitada Não é uma vogal')
+'''
+
+''' 6)
+print('Este programa calcula as razões de uma equação de 2º grau: ax²+bx+c=0')
+a = float(input('Digite o coeficiente de x²: '))
+b = float(input('Digite o coeficiente de x: '))
+c = float(input('Digite o termo independente: '))
+
+delta = b**2 - 4*a*c
+
+if delta == 0:
+    print('A equação possui raiz única igual à: %f' % (-b/(2*a)))
+else:
+    if (delta > 0):
+        print('A equação possui duas raí­zes distintas: x1 = %f e x2 = %f' %((-b-delta**(1/2))/(2*a),  (-b+delta**(1/2))/(2*a)) )
+    else:
+        print('A equação não possui raí­zes reais')
+'''
+
+''' 7) 
+print('Este programa calcula as raÃ­zes de uma equação de 2º grau: ax²+bx+c=0')
+a = float(input('Digite o coeficiente de x²: '))
+b = float(input('Digite o coeficiente de x: '))
+c = float(input('Digite o termo independente: '))
+
+delta = b**2 - 4*a*c
+
+if delta == 0:
+    print('A equação possui raiz única igual à: %f' % (-b/(2*a)))
+else:
+    if (delta > 0):
+        print('A equação possui duas raí­zes distintas: x1 = %f e x2 = %f' %((-b-delta**(1/2))/(2*a),  (-b+delta**(1/2))/(2*a)) )
+    else:
+        print('A equação possui duas raí­zes complexas: x1 = %f + %fi e x2 = %f + %fi' %(-b/(2*a), (-delta)**(1/2)/(2*a),  -b/(2*a), -(-delta)**(1/2)/(2*a)) )
+'''
+
+''' 8) e 9) aqui poderia usar o if-elif-else
+print('Este programa verifica se três números reais formam os lados de um triângulo.')
+a = float(input('Entre com o primeiro número: '))
+b = float(input('Entre com o segundo número: '))
+c = float(input('Entre com o terceiro número: '))
+
+if (a+b<=c or a+c<=b or b+c<=a):
+    print('Os três valores não formam um triângulo.')
+else:
+    if (a==b and a==c):
+        print('Os três segmentos formam um triângulo equilátero')
+    else:
+        if (a==b or a==c):
+            print('Os três segmentos formam um triângulo isósceles')
+        else:
+            print('Os três segmentos formam um triângulo escaleno.')
+'''
+
+''' 10) 
+d1  = int(input('Digite o dia da primeira data: '))
+m1  = int(input('Digite o mês da primeira data: '))
+a1  = int(input('Digite o ano da primeira data: '))
+print('\n')
+d2  = int(input('Digite o dia da segunda data: '))
+m2  = int(input('Digite o mês da segunda data: '))
+a2  = int(input('Digite o ano da segunda data: '))
+
+valor1 = a1*10000+m1*100+d1
+valor2 = a2*10000+m2*100+d2
+
+if (valor1>valor2):
+    print('A segunda data informada ocorre antes.')
+else:
+    print('A primeira data informada ocorre antes.')
+'''
+
+''' 11)
+n = int(input('Digite um número inteiro: '))
+if n == 1:
+    print("Domingo")
+elif n == 2:
+    print("Segunda-feira")
+elif n == 3:
+    print("Terça-feira")
+elif n == 4:
+    print("Quarta-feira")
+elif n == 5:
+    print("Quinta-feira")
+elif n == 6:
+    print("Sexta-feira")
+elif n == 7:
+    print("Sábado")
+else:
+   print("dia inválido")
+'''
+
+''' 12) 
+AC = float(input('Digite a área do círculo: '))
+AQ = float(input('Digite a área do quadrado: '))
+
+diagonal_quadrado = (2*AQ)**(1/2)
+diametro_circulo = 2*(AC/3.14)**(1/2)
+
+if diagonal_quadrado <= diametro_circulo:
+    print('Esconde')
+else:
+    print('Não Esconde')
+'''
